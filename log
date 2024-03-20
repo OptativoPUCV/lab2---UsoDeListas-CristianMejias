@@ -165,3 +165,14 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
 cc1: all warnings being treated as errors
 Compilation failed
 24693ce
+Wed 20 Mar 2024 02:56:09 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:140:17: error: ‘parentesis’ may be used uninitialized [-Werror=maybe-uninitialized]
+  140 |     *parentesis = cadena[i];
+      |     ~~~~~~~~~~~~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1d4aee7
