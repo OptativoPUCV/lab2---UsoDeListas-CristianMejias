@@ -296,3 +296,19 @@ exercises.c:160:7: error: expected expression before ‘}’ token
       |       ^
 Compilation failed
 7d9a4aa
+Wed 20 Mar 2024 11:47:56 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:153:54: error: expected ‘)’ before ‘pop’
+  153 |         if (esPareja(cadena[i], *((char *)top(pila)))
+      |            ~                                         ^
+      |                                                      )
+  154 |           pop(pila);
+      |           ~~~                                         
+exercises.c:157:7: error: expected expression before ‘}’ token
+  157 |       }
+      |       ^
+Compilation failed
+c7cbdb5
