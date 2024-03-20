@@ -224,3 +224,13 @@ Wed 20 Mar 2024 03:24:25 AM UTC:
  tests:  4|1
 total_score: 50/70
 6223bab
+Wed 20 Mar 2024 01:07:20 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:155:25: error: expected statement before ‘)’ token
+  155 |   if (top(pila) == NULL))
+      |                         ^
+Compilation failed
+f40a3f9
