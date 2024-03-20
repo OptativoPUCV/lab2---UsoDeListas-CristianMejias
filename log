@@ -111,3 +111,39 @@ Wed 20 Mar 2024 02:37:41 AM UTC:
  tests:  4|1
 total_score: 50/70
 24a718a
+Wed 20 Mar 2024 02:52:32 AM UTC: 
+ exercises.c | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:141:24: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  141 |       push(pila, cadena[i]);
+      |                  ~~~~~~^~~
+      |                        |
+      |                        char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:146:29: error: expected statement before ‘)’ token
+  146 |       if (top(pila) != NULL))
+      |                             ^
+exercises.c:153:7: error: expected ‘}’ before ‘else’
+  153 |       else
+      |       ^~~~
+exercises.c: At top level:
+exercises.c:157:3: error: expected identifier or ‘(’ before ‘return’
+  157 |   return 1;
+      |   ^~~~~~
+exercises.c:158:1: error: expected identifier or ‘(’ before ‘}’ token
+  158 | }
+      | ^
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:156:3: error: control reaches end of non-void function [-Werror=return-type]
+  156 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+2c8bb37
