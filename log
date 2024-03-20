@@ -29,3 +29,21 @@ exercises.c:53:34: error: expected ‘;’ before ‘}’ token
       |   ~                               
 Compilation failed
 3eecd5a
+Wed 20 Mar 2024 02:07:36 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:53:14: error: expected expression before ‘List’
+   53 |     pushBack(List *L, void *dato);
+      |              ^~~~
+exercises.c:53:5: error: too few arguments to function ‘pushBack’
+   53 |     pushBack(List *L, void *dato);
+      |     ^~~~~~~~
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:20:6: note: declared here
+   20 | void pushBack(List *L, void *dato);
+      |      ^~~~~~~~
+Compilation failed
+45eaff4
