@@ -145,7 +145,7 @@ int parentesisBalanceados(char *cadena)
     {
       if (top(pila) != NULL)
       {
-        if (parentesis == top(pila))
+        if (*parentesis == *((char *)top(pila)))
           pop(pila);
         else
           return 0;
