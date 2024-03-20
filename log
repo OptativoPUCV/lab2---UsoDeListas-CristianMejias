@@ -53,3 +53,16 @@ Wed 20 Mar 2024 02:10:45 AM UTC:
  tests:  1|4
 total_score: 10/70
 108f46c
+Wed 20 Mar 2024 02:14:14 AM UTC: 
+ exercises.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:72:19: error: expected ‘;’ before ‘}’ token
+   72 |     dato = next(L)
+      |                   ^
+      |                   ;
+   73 |   }
+      |   ~                
+Compilation failed
+1003f7e
