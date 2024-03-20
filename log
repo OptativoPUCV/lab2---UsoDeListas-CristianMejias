@@ -47,3 +47,9 @@ arraylist.h:20:6: note: declared here
       |      ^~~~~~~~
 Compilation failed
 45eaff4
+Wed 20 Mar 2024 02:10:45 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+108f46c
