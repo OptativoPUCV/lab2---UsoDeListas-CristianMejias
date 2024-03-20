@@ -93,7 +93,6 @@ void eliminaElementos(List*L, int elem)
       popCurrent(L);
     dato = next(L);
   }
-  
 }
 
 /*
@@ -103,7 +102,22 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2)
+{
+  Stack* pilaTemp = create_stack();
+  void *temp;
+
+  while(top(P1) != NULL)
+  {
+    temp = top(P1);
+    push(pilaTemp, temp);
+  }
+
+  while(top(pilaTemp) != NULL)
+  {
+    temp = top(pilaTemp);
+    push(P2, temp);
+  }
 }
 
 /*
