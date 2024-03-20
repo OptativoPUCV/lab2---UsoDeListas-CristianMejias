@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include "arraylist.h"
 #include "stack.h"
+#include "stdbool.h"
 
 //#include "exercises.h"
 
@@ -131,9 +132,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 bool esPareja(char c1, char c2)
 {
-  if ((c1 == '(' && c2 == ')') || 
-      (c1 == '[' && c2 == ']') || 
-      (c1 == '{' && c2 == '}' ))
+  if ((c1 == '(' && c2 == ')') || (c1 == '[' && c2 == ']') || (c1 == '{' && c2 == '}' ))
     return true;
   return false;
 }
