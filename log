@@ -89,3 +89,19 @@ Wed 20 Mar 2024 02:31:33 AM UTC:
  tests:  3|2
 total_score: 40/70
 588c25b
+Wed 20 Mar 2024 02:37:26 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:113:10: error: ‘pilaTemp’ undeclared (first use in this function); did you mean ‘pilaTemp1’?
+  113 |     push(pilaTemp, temp);
+      |          ^~~~~~~~
+      |          pilaTemp1
+exercises.c:113:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:107:10: error: unused variable ‘pilaTemp1’ [-Werror=unused-variable]
+  107 |   Stack* pilaTemp1 = create_stack();
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27e2554
