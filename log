@@ -176,3 +176,9 @@ exercises.c:140:17: error: ‘parentesis’ may be used uninitialized [-Werror=m
 cc1: all warnings being treated as errors
 Compilation failed
 1d4aee7
+Wed 20 Mar 2024 02:59:07 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|1
+total_score: 50/70
+67732e1
