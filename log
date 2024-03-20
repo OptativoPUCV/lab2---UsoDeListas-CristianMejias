@@ -105,3 +105,9 @@ exercises.c:107:10: error: unused variable ‘pilaTemp1’ [-Werror=unused-varia
 cc1: all warnings being treated as errors
 Compilation failed
 27e2554
+Wed 20 Mar 2024 02:37:41 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+24a718a
