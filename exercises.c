@@ -129,6 +129,15 @@ La función verifica si la cadena de entrada tiene sus
 paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
+bool esPareja(char c1, char c2)
+{
+  if ((c1 == '(' && c2 == ')') || 
+      (c1 == '[' && c2 == ']') || 
+      (c1 == '{' && c2 == '}' ))
+    return true;
+  return false;
+}
+
 
 int parentesisBalanceados(char *cadena)
 {
@@ -139,11 +148,13 @@ int parentesisBalanceados(char *cadena)
     if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
       push(pila, &cadena[i]);
     
-    if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+    //if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+    else
     {
-      if (pila != NULL)
+      if (top(pila) != NULL)
       {
-        if (cadena[i] == *((char *)top(pila)))
+        if (esPareja(cadena[i], *((char *)top(pila)))
+        //if (cadena[i] == *((char *)top(pila)))
           pop(pila);
         else
           return 0;
