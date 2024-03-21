@@ -141,12 +141,13 @@ bool esPareja(char c1, char c2)
 int parentesisBalanceados(char *cadena)
 {
   Stack* pila = create_stack();
-  //char *caracter = (char*) malloc(sizeof(char));
+  char *caracter;
   
   for (int i = 0 ; cadena[i] != '\0' ; i++)
   {
-    char *caracter = (char*) malloc(sizeof(char));
+    caracter = (char*) malloc(sizeof(char));
     *caracter = cadena[i];
+    
     if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
       push(pila, caracter);
     else
