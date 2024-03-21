@@ -155,10 +155,7 @@ int parentesisBalanceados(char *cadena)
       else
       {
         if ( esPareja(cadena[i], *((char*)top(pila))))
-        {
-          printf("%c - %c\n", cadena[i], *((char*)top(pila)));
           pop(pila);
-        }
         else
           return 0;
       }
