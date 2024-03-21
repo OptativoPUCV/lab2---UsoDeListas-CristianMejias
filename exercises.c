@@ -150,15 +150,18 @@ int parentesisBalanceados(char *cadena)
       push(pila, caracter);
     else
     {
-      if (top(pila) != NULL)
+      if (top(pila) == NULL)
+        return 0;
+      else
       {
-        if ( esPareja(cadena[i], *((char *)top(pila))))
+        if ( esPareja(cadena[i], *((char*)top(pila))))
+        {
+          printf("%c - %c\n", cadena[i], *((char*)top(pila)));
           pop(pila);
+        }
         else
           return 0;
       }
-      else
-        return 0;
     }
   }
   if (top(pila) == NULL)
