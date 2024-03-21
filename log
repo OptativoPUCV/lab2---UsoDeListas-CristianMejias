@@ -336,3 +336,14 @@ Thu 21 Mar 2024 12:07:26 AM UTC:
  tests:  4|1
 total_score: 50/70
 7dc3291
+Thu 21 Mar 2024 12:09:30 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:144:9: error: unused variable ‘caracter’ [-Werror=unused-variable]
+  144 |   char *caracter = (char*) malloc(sizeof(char));
+      |         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ebee899
