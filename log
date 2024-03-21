@@ -456,3 +456,19 @@ exercises.c:155:72: error: expected statement before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 0f0cdeb
+Thu 21 Mar 2024 08:31:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:155:71: error: expected ‘)’ before ‘return’
+  155 |       if (top(pila) == NULL || !esPareja(*(char*)top(pila), *caracter)
+      |          ~                                                            ^
+      |                                                                       )
+  156 |         return 0;
+      |         ~~~~~~                                                         
+exercises.c:158:5: error: expected expression before ‘}’ token
+  158 |     }
+      |     ^
+Compilation failed
+6a6f62f
